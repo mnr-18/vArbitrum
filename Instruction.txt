@@ -1,0 +1,20 @@
+1 Open a pyCharm project with these folders
+2 Install "pycryptodome" package for keccak256 from 
+   File-->setting --> (under Project folder select Python interpreter)-->click "+" sign
+   Search for pycryptodome and install
+
+3 Put the state files in "input_files"
+4 Run "stateFileGenerator.py" 
+	It will generate "statex_is_ds.txt" files under the "state_files" folder
+    and
+    "statex_hash" under the "state_hashes" folder
+
+5 Run the "stateHahses.py" to get all the state hashes in a single file "state_hashes_for_mRoot.txt"
+  under the "merkleRoot" folder
+
+6 Compute Merkle Root using values in "state_hashes_for_mRoot.txt"
+  (For computing Merkle Root using these hash values in remix test data are given in "state_hashes_remix_Merkle_root_generation.txt" file)
+
+7 Save the Merkle Root in the "Mroot.txt" file
+
+ 
