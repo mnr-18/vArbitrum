@@ -1,2 +1,2 @@
 # vArbitrum
-Proof-of-concept version of vArbitrum - Testing the challenge-response process
+Proof-of-concept of the vArbitrum protocol's challenge-response process
