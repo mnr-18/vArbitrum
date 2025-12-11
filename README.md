@@ -2,7 +2,7 @@
 This repository contains the smart contracts used to simulate the vArbitrum protocol’s challenge–response mechanism, along with Python scripts for constructing (off-chain) Merkle roots using AVM state hashes.
 
 ## Repository Structure
-1. Contracts_needed_ones/
+1. **Contracts_needed_ones/**
    
 This folder contains all Solidity smart contracts used to simulate the vArbitrum dispute-resolution process.
 It includes:
@@ -15,7 +15,7 @@ It includes:
    - OneStepProof.sol: AVM-instruction → EVM-opcode translation 
    - ChallengeTester.sol: a lightweight test code replacing Arbitrum’s RollupUser.sol
 - *Computation example* — Matrix Multiplication (*matrixmul.sol* - 10×10 matrix multiplication smart contract)
-2. Sample_Mroot_generation/
+2. **Sample_Mroot_generation/**
 
 This folder contains Python scripts executed off-chain by each manager to:
 - parse AVM-like state files
