@@ -24,11 +24,11 @@ This folder contains Python scripts executed off-chain by each manager to:
 The file *Instruction.txt* provides step-by-step guidance on running the scripts.
 
 ## Simulation Environment
-The proof-of-concept replicates the Arbitrum challenge protocol in a local setup using:
+The proof-of-concept replicates the vArbitrum's challenge-response protocol in a local setup using:
 - *Ganache* to simulate local Ethereum
 - *Truffle / Remix* for compiling and deploying contracts
 - *Web3.py* for Python-based manager scripts
-(Note that only 8+ essential contracts from EthBridge are deployed (called rEthBridge) for this testing without the full Arbitrum codebase.)
+(Note that only 8+ essential contracts from EthBridge are deployed (called rEthBridge) for this testing without deploying the full Arbitrum codebase.)
 
 ## How to use this repository
 1. Compile contracts using Remix or Truffle
@@ -40,7 +40,7 @@ The proof-of-concept replicates the Arbitrum challenge protocol in a local setup
 4. Use the following smart-contract function calls to test the full protocol:
   <img width="400" height="300" alt="contract_list" src="https://github.com/user-attachments/assets/0e2c8667-48f7-4044-ae95-3c762a2a0f52" />
 
-## How dispute resolution works (high-level idea)
+## How the challenge-response works (high-level idea)
             ┌──────────────────────────────────────────┐
           │              Client (C)                  │
           │  Deploys program + initialization data   │
