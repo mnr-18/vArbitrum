@@ -40,7 +40,7 @@ The proof-of-concept replicates the Arbitrum challenge protocol in a local setup
 4. Use the following smart-contract function calls to test the full protocol:
   <img width="400" height="300" alt="contract_list" src="https://github.com/user-attachments/assets/0e2c8667-48f7-4044-ae95-3c762a2a0f52" />
 
-## vArbitrum Dispute Resolution - How it works (high-level idea)
+## How dispute resolution works (high-level idea)
             ┌──────────────────────────────────────────┐
           │              Client (C)                  │
           │  Deploys program + initialization data   │
