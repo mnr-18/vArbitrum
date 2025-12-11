@@ -49,8 +49,9 @@ The proof-of-concept replicates the vArbitrum's challenge-response protocol in a
                              ▼
        ┌─────────────────────────────────────────────────────┐
        │               Managers S1 and S2                    │
-       │  • Execute computation off-chain (AVM-like)         │
-       │  • Generate state hashes + Merkle root (R1, R2)     │
+       │  • Execute computation off-chain (in private EVM)   │
+       │  • Generate state hashes (AVM-like) 
+       |    + construct Merkle roots (R1, R2)                │
        └─────────────────────────────────────────────────────┘
                              │
                Submit R1 and R2 to rEthBridge
@@ -65,7 +66,7 @@ The proof-of-concept replicates the vArbitrum's challenge-response protocol in a
                     ▼                       ▼
        ┌──────────────────┐     ┌─────────────────────────┐
        │ Accept Result ✔  │     │   Challenge Begins      │
-       │ Verified as R1   │     │ initializeChallenge()   │
+       │                  │     │ initializeChallenge()   │
        └──────────────────┘     └─────────────────────────┘
                                            │
                                            ▼
