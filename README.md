@@ -13,7 +13,7 @@ Specifically, it includes:
    - MerkleLib.sol: Merkle root generation
    - OneStepProofCommon.sol: executes a single disputed step
    - OneStepProof.sol: AVM-instruction → EVM-opcode translation for correctness checking
-   - ChallengeTester.sol: a lightweight test harness replacing Arbitrum’s RollupUser.sol
+   - ChallengeTester.sol: a lightweight test code replacing Arbitrum’s RollupUser.sol
 - *Computation example* — Matrix Multiplication (matrixmul.sol - 10×10 matrix multiplication smart contract)
 2. Sample_Mroot_generation/
 
@@ -35,4 +35,4 @@ The proof-of-concept replicates the Arbitrum dispute-resolution flow but in a li
   - compute Merkle roots
   - submit results to the on-chain verifier
 4. Use the following function calls from smart contracts to test:
-  <img width="597" height="495" alt="contract_list" src="https://github.com/user-attachments/assets/0e2c8667-48f7-4044-ae95-3c762a2a0f52" />
+  <img width="400" height="300" alt="contract_list" src="https://github.com/user-attachments/assets/0e2c8667-48f7-4044-ae95-3c762a2a0f52" />
